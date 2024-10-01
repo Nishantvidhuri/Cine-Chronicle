@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*prinary - 1F1E24
+ secondary - 6556CD
+*/
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2d2d2f;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #6556CD;
+    border-radius: 10px;
+}
+/* Wrapper to control the dropdown container */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin: 10px 0;
+  }
+  
+  /* Custom Dropdown */
+  .custom-dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9ca3af; /* Matches text-zinc-400 */
+    background-color: #18181b; /* Matches bg-zinc-900 */
+    border: 2px solid #4b5563; /* Dark border matching the theme */
+    border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .custom-dropdown:hover {
+    border-color: #9ca3af; /* Matches hover color in theme */
+    background-color: #27272a; /* Slightly lighter than bg-zinc-900 */
+  }
+  
+  /* Focus style */
+  .custom-dropdown:focus {
+    outline: none;
+    border-color: #6b7280; /* Matches text-zinc-500 */
+  }
+  
+  /* Disabled option */
+  .custom-dropdown option[disabled] {
+    color: #6b7280; /* Matches text-zinc-500 */
+  }
+  
+  /* Add a shadow when focused */
+  .custom-dropdown:focus-within {
+    box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+  }
+  
