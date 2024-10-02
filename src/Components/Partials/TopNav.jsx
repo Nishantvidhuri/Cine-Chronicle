@@ -6,7 +6,7 @@ import Noimage from "../../../public/Noimage.jpg";
 function TopNav() {
     const [query, setQuery] = useState("");
     const [searches, setSearches] = useState([]);
-    const searchRef = useRef(null); // Ref for handling clicks outside
+    const searchRef = useRef(null); // Ref for handling clicks outsides
     const inputRef = useRef(null); // Ref for input field
     const [isInputVisible, setIsInputVisible] = useState(false); // For mobile input visibility
 
